@@ -26,7 +26,7 @@ Both components share access to models and data through an NFS mount.
 
 1. Clone the repository on the master node:
    ```bash
-   git clone https://github.com/yourusername/wine-quality-prediction.git
+   git clone https://github.com/FerasHamam/wine-quality-prediction.git
    cd wine-quality-prediction
    ```
 
@@ -86,6 +86,7 @@ Both components share access to models and data through an NFS mount.
 
 4. Run prediction with Docker:
    ```bash
+   ./install-docker.sh
    ./run-prediction.sh docker
 
    # Alterantive
