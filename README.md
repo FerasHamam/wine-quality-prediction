@@ -22,6 +22,21 @@ Both components share access to models and data through an NFS mount.
 
 ## Quick Start
 
+### Security Groups (AWS)
+
+#### Inbound Rules
+
+| IP Version | Type | Protocol | Port Range | Source |
+|------------|------|----------|------------|--------|
+| - | All Traffic | All | All | Your-Security-Group |
+| IPv4 | SSH | TCP | 22 | Your-IP |
+
+#### Outbound Rules
+
+| IP Version | Type | Protocol | Port Range | Destination |
+|------------|------|----------|------------|-------------|
+| IPv4 | All Traffic | All | All | 0.0.0.0/0 |
+
 ### Setup Cluster
 
 1. Clone the repository on the master node:

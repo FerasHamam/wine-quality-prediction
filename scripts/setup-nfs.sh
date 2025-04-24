@@ -14,7 +14,7 @@ if [ "$1" == "master" ]; then
     sudo systemctl restart nfs-kernel-server
     
     # Start Spark master
-    $SPARK_HOME/sbin/start-master.sh
+    /opt/spark/sbin/start-master.sh
     
     echo "Master node setup complete - Master Started!"
 else
@@ -28,7 +28,7 @@ else
 
     
     # Start Spark worker
-    $SPARK_HOME/sbin/start-worker.sh spark://$2:7077
+    /opt/spark/sbin/start-worker.sh spark://$2:7077
     
     echo "Worker node setup complete - Worker Started!"
 fi
