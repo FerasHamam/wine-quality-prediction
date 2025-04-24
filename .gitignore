@@ -1,0 +1,3 @@
+# Create or edit .gitignore
+echo "*.jar" >> .gitignore
+echo "target/" >> .gitignore
